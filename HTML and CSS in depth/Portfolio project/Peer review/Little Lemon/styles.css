@@ -1,0 +1,149 @@
+body{
+    background-color: #edefee;
+    font-family: 'Markazi text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ h1 {
+    font-size :3rem;
+    color: white;
+    
+    
+}
+h2 {
+    font-size :2rem;
+}
+
+header> img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+      
+    
+}
+/* styling nav menu */
+nav ul{
+    
+    font-size: 1.5rem;
+    list-style:none;
+    text-align:center;
+    background-color: dimgray;
+    height: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    text-decoration: none;
+
+    
+
+}
+/* styling nav menu items  */
+nav li {
+    
+    padding-top: 10px;
+    color: white;
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+
+}
+
+/* changing nav menu link color and removing underline from link */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/* setting section type flex  */
+section {
+    display: flex;
+}
+
+#secone{
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 200px;
+    background-image: url("pasta\ background.png");
+    border-radius: 15px;
+    
+}
+
+#secone> p{
+    color: white;
+}
+
+/* to add gap between three articles in section two  */
+.sectwo{
+    padding-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* added style in articles in the section two */
+article{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: #F4E5D6;
+}
+
+article {
+    flex: 1;
+}
+
+footer{
+    display: flex;
+}
+
+
+/* defining footer div as flex and setting top padding 3% */
+footer div{
+    flex : 1;
+    padding-top: 3%;
+}
+/* for aligning the footer text in end */
+.footertext{
+    
+    padding-top: 2%;
+    text-align:end
+}
+/*for line over copyright text in footer  */
+.footertext{
+    border-top: 3px solid black;
+}
+
+/* A link that has not been visited */
+a:link {
+    color: white;
+}
+/* A link that has been visited */
+a:visited {
+    color: yellow;
+}
+/* A link that is hovered on */
+a:hover {
+    color: yellow;
+}
+/* A link that is selected */
+a:active {
+    color: green;
+}
+
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+.sectwo{
+    flex-direction: column;
+}
+}
+
